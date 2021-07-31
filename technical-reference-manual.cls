@@ -25,7 +25,10 @@
 			\begin{flushright}
 				\huge{\@title \space \@subtitleCMD}
 				\\
-				\large\@versionCMD
+				\large{For}
+				\huge{\@versionCMD}
+				\\
+				\large{Version \@technicalReferenceManualVersionCMD}
 			\end{flushright}
 		}
 		\addvspace{10em}
@@ -37,8 +40,6 @@
 		{
 			\begin{center}
 				\@author
-				\\
-				\@technicalReferenceManualVersionCMD
 				\\
 				last updated \@date
 				\\
