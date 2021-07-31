@@ -18,41 +18,31 @@
 \renewcommand\maketitle
 {
 	\begin{titlepage}
-		\centering
 		\@logoCMD
+		
 		\vfill
 		{
-			\par
-			{
-				\huge
-				\@title
-			}
-			\par
-			{
-				\large
-				\@subtitleCMD
-			}
-			\bigskip
-			\par
-			{
-				\large
-				\@versionCMD
-			}
+			\begin{flushright}
+				\huge{\@title \space \@subtitleCMD}
+				\\
+				\large\@versionCMD
+			\end{flushright}
 		}
+	
 		\vfill
 		{
-			\@sourceCMD
-			\\
-			\@contactCMD
+			\begin{flushright}
+				\@author
+				\\
+				\@technicalReferenceManualVersionCMD
+				\\
+				last updated \@date
+				\\
+				\@sourceCMD
+				\\
+				\@contactCMD
+			\end{flushright}
 		}
-		\\
-		\vfill
-		{
-			\@author
-			\\
-			\@technicalReferenceManualVersionCMD
-			\\
-			last updated \@date
-		}
+		
 	\end{titlepage}
 }
