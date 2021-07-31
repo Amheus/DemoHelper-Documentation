@@ -15,6 +15,7 @@
 \DeclareRobustCommand*{\version}[1]{\gdef\@versionCMD{#1}}
 \DeclareRobustCommand*{\manualversion}[1]{\gdef\@technicalReferenceManualVersionCMD{#1}}
 
+
 \renewcommand\maketitle
 {
 	\begin{titlepage}
@@ -25,10 +26,10 @@
 			\begin{flushright}
 				\huge{\@title \space \@subtitleCMD}
 				\\
-				\large{For}
-				\huge{\@versionCMD}
+				\large{For }
+				\huge{\@title \space \@versionCMD}
 				\\
-				\large{Version \@technicalReferenceManualVersionCMD}
+				\large{Documentation Version \@technicalReferenceManualVersionCMD}
 			\end{flushright}
 		}
 		\addvspace{10em}
@@ -41,7 +42,7 @@
 			\begin{center}
 				\@author
 				\\
-				last updated \@date
+				Last Updated \@date
 				\\
 				\@sourceCMD
 				\\
@@ -52,4 +53,28 @@
 		\vfill{~}
 
 	\end{titlepage}
+}
+
+\newcommand\makebackcover
+{
+	\pagebreak
+		
+	\vfill{~}
+	\vfill
+	{
+		\begin{center}
+			\@logoCMD
+			\\
+			\huge{\@title}
+			\\
+			\huge{\@versionCMD}
+		\end{center}
+	}
+	\vfill{~}
+	\vfill
+	{
+		\begin{center}
+			\large{Documentation Version \@technicalReferenceManualVersionCMD}
+		\end{center}
+	}
 }
