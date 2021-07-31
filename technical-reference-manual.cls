@@ -28,10 +28,14 @@
 				\large\@versionCMD
 			\end{flushright}
 		}
+		\addvspace{10em}
 	
+		\pagebreak
+	
+		\vfill{~}
 		\vfill
 		{
-			\begin{flushright}
+			\begin{center}
 				\@author
 				\\
 				\@technicalReferenceManualVersionCMD
@@ -41,8 +45,10 @@
 				\@sourceCMD
 				\\
 				\@contactCMD
-			\end{flushright}
+			\end{center}
 		}
-		
+		\vfill{~}
+		\vfill{~}
+
 	\end{titlepage}
 }
